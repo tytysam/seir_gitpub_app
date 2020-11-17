@@ -6,7 +6,7 @@
 
 1) **Fork and clone** this repository into your `W06D01` directory
 
-2) **Do:** [GitPud](./gitpud.md)
+2) **Do:** [GitPub](./gitpub.md)
 
 3) **Submit:** via GitHub issues. Follow the instructions found in the [wiki](https://git.generalassemb.ly/SEIR-Margaret/class-recordings-and-info/blob/master/submitting-homework.md).
 
