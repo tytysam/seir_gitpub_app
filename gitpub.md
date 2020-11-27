@@ -171,7 +171,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 **In `Index.jsx`**
 
 - Start by creating a React variable that requires react
-- Create your Index class that enxtends the React.Component 
+- Create your Index class that extends the React.Component 
 - Add an `<h1>` that describes the page, i.e. `Welcome to gitPub`
 - Try adding some inline styles:
    - We can add inline CSS, which are specified as attributes and are passed to the elements. These are specified as an object with a key as camelCased style name & value being the actual style value (and not as a string).
