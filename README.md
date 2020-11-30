@@ -10,4 +10,4 @@
 
 3) **Submit:** via GitHub issues. Follow the instructions found in the [wiki](https://git.generalassemb.ly/SEIR-Margaret/class-recordings-and-info/blob/master/submitting-homework.md).
 
-4) **Prepare for the next day:** 
+4) **Prepare for the next day:**  [Download Postma](https://www.postman.com/downloads/)
