@@ -6,6 +6,7 @@
 const express = require("express");
 const app = express(); // <== creates our Express HTTP server
 const PORT = 3000;
+const drinks = require("./models/drinks.js");
 
 // Route Handler
 app.get("/", (req, res) => {
