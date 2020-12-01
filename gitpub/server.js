@@ -8,6 +8,15 @@ const app = express(); // <== creates our Express HTTP server
 const PORT = 3000;
 const drinks = require("./models/drinks.js");
 
+/*
+ **************
+ * middleware *
+ **************
+ */
+app.set("view engine", "jsx"); // use set method to create a key/value pair...  our Key = "View Engine" and our Value = "JSX"
+app.engine("jsx", require("express-react-views").createEngine()); // use engine method (in conjunction with .createEngine) to create our engine...
+// END middleware???
+
 // Route Handler | Root
 app.get("/", (req, res) => {
   res.send("Welcome to the Gitpub App!");
@@ -15,7 +24,9 @@ app.get("/", (req, res) => {
 
 // Route Handler | Drinks
 app.get("/drinks", (req, res) => {
-  res.send(drinks);
+  res.render("Index", {
+    drinks: drinks, // in this instance, we are passing our drinks OBJECT as our props
+  });
 });
 
 // LISTEN
