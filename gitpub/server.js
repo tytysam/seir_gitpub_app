@@ -8,9 +8,14 @@ const app = express(); // <== creates our Express HTTP server
 const PORT = 3000;
 const drinks = require("./models/drinks.js");
 
-// Route Handler
+// Route Handler | Root
 app.get("/", (req, res) => {
   res.send("Welcome to the Gitpub App!");
+});
+
+// Route Handler | Drinks
+app.get("/drinks", (req, res) => {
+  res.send(drinks);
 });
 
 // LISTEN
