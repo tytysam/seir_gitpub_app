@@ -29,6 +29,11 @@ app.get("/drinks", (req, res) => {
   });
 });
 
+// Route Handler | ID
+app.get("/drinks/:id", (req, res) => {
+  res.send(req.params.id);
+});
+
 // LISTEN
 app.listen(PORT, () => {
   console.log(`Hey, I am up-and-running on Port:${PORT}`);
